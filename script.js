@@ -33,7 +33,7 @@ window.onload = function(){
     var player_height = 32;
     var playerImg = new Image();
     var score = 0;
-    var health = 100;
+    var health = 1000;
     playerImg.src = "https://image.ibb.co/dfbD1U/heroShip.png";
     
     var _bullets = []; 
@@ -223,7 +223,7 @@ window.onload = function(){
           if(collision(_healthkits[hh], _bullets[hhh])){
             _healthkits.splice(hh, 1);
             _bullets.splice(hhh, 1);
-            health += 10;
+            health += 100;
           }
         }
       } 
